@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            主页
+    {% endblock %}
+    </title>
+<link rel="stylesheet" href="/static/base/css/bootstrap-theme.css">
+<link rel="stylesheet" href="/static/base/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/base/css/babe.css">
+</head>
+<body>
+<div class="container">
+    <div id="header">
+        <ul>
+            <li>
+                <a href="#">主页</a>
+            </li>
+            <li>
+                <a href="#">今日推荐</a>
+            </li>
+            <li>
+                <a href="#">总排行</a>
+            </li>
+            <li>
+                <a href="#">主页</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>

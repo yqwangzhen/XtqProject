@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <link rel="stylesheet" href="/static/log/css/mine.css">
+</head>
+<body style="background-color: #ebedef">
+<div class="div1">
+    <div id="div3"><img src="/static/log/imgs/head.jpg"></div>
+    <div id="div2">
+        {% if is_login %}
+        <p style="color: black">{{ username }}</p>
+        {% else %}
+        <p><a href="{% url 'myapp:log' %}">登录</a></p>
+        {% endif %}
+    </div>
+    <div id="div4">
+        {% if is_login %}
+    <p>
+    <a href="{% url 'myapp:louout' %}">退出</a>
+    </p>
+{% endif %}
+    </div>
+<div id="div5">
+        <div id="div6">
+        <a href="" id="a1">
+        <img  src="/static/log/imgs/order.png" id="img1" >全部订单</a>
+        <a href="" id="a2">
+        <img  src="/static/log/imgs/money.png" id="img2" >待付款</a>
+        <a href="" id="a3">
+        <img  src="/static/log/imgs/nav7.png" id="img3" >待使用</a>
+        <a href="" id="a4">
+        <img  src="/static/log/imgs/nav6.png" id="img4" >待评价</a>
+        <a href="" id="a5">
+        <img  src="/static/log/imgs/nav3.png" id="img5" >退款/售后</a>
+        </div>
+    </div>
+</div>
+<div class="div2">
+    <h3 id="t1">猜你喜欢</h3>
+    <div id="a6"></div>
+    <div id="a7"></div>
+    <div id="a8"></div>
+    <div id="a9"></div>
+</div>
+<div class="div3">
+    <div id="div7">
+        <a href="" id="a10"><h2>我的主页</h2></a>
+    </div>
+    <div id="div8">
+        <a href="" id="a10"><h2>我的订单</h2></a>
+    </div>
+    <div id="div9">
+        <h5>全部订单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>
+        </h5>
+        <h5>全部订单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>
+        </h5>
+        <h5>全部订单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>
+        </h5>
+        <h5>全部订单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>
+        </h5>
+        <h5>全部订单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>
+        </h5>
+
+    </div>
+</div>
+</body>
+</html>
